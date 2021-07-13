@@ -1,0 +1,85 @@
+<!--갤럭시-->
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .{margin: 0; padding: 0; border: 0;}
+            
+            .logo{margin:0 auto; text-align: middle; font-size:300%;}
+            .nav{margin:0 auto; text-align: middle; left:180%;}
+
+            .info{padding:10, 50, 10, 50;}
+            .image{ width:50%; float:left;}
+            .button{
+                    margin: auto;
+                    font-size: 200px;
+            }
+            .space{
+                width:100px;
+            }
+            .buy{
+                font-size:40px;
+            }
+            .kart{
+                font-size:40px;
+            }
+        </style>
+    </head>
+
+<!------------------------->
+    
+    <body>
+        <div class="header">
+            <center>
+            <h1 class="logo">SellPhone</h1>
+            <div class="nav">
+                <button id="samsung" >Samsung</button>
+                <button id="apple" >Apple</button>
+            </div>
+            </center>
+        </div>
+        <!-------제품------->
+        <div class="info">
+            <!--이미지-->
+            <div class="image">
+                    <center>
+            <img src="s21u.webp" width="80%"; height="80%";>
+                    </center>
+            </div>
+
+            <!--버튼-->
+            <div class="button">
+                <button class="buy">buy</button>
+                <button class="kart">Add kart</button>
+            </div>
+        </div>
+
+        <div class="space"></div>
+        <!--제품 소개-->
+        <div class="a" style="text-align:justify">
+        
+            소개: 2010년 갤럭시 S를 시작으로, 매해 상반기에 공개된 삼성전자의 
+            안드로이드 플래그십 스마트폰 시리즈인 
+            갤럭시 S 시리즈의 2021년형 모델이자 12번째 모델들 중 하나다. 
+            정식 발매명은 공개년도인 2021년에 맞춰 '갤럭시 S21'로 명명되었다.
+            한국 시각으로 2021년 1월 15일 오전 0시에 갤럭시 언팩 2021에서 공개되었다.
+            
+        
+        </div>
+        
+
+        <script lang="javascript">
+            buyBtn = document.querySelector(".buy");
+            function init() {
+                buyBtn.addEventListener("click", function() {
+                location.href="checkout.html";
+                });
+            }
+            init();
+        </script>
+    
+    </body>
+
+</html>
