@@ -22,8 +22,12 @@
                 font-style: normal;
             }
 
-            container {
+            .container {
                 background-color: white;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
             }
 
             header {
@@ -132,51 +136,51 @@
         </style>
     </head>
     <body>
-        <container>
-        <header><p>sellphone</p></header>
-        <section>
-            <div class="sign-in-wrapper">
-                <div class="sign-in">
-                    <form action="phoneList.html">
+        <div class="container">
+            <header><p>sellphone</p></header>
+            <section>
+                <div class="sign-in-wrapper">
+                    <div class="sign-in">
+                        <form action="phoneList.html">
+                            <div class="title-box">
+                                <p id="name">로그인</p>
+                                <p id="name-description">기존 고객님일 경우 아래 로그인을 이용해주세요</p>
+                            </div>
+                            <div class="id-box">
+                                <p>아이디 또는 이메일</p>
+                                <input type="text">
+                            </div>
+                            <div class="pw-box">
+                                <p>비밀번호</p>
+                                <input type="text">
+                            </div>
+                            <div class="find-pw">
+                                <a href="">비밀번호 찾기</a>
+                            </div>
+                            <div class="btns">
+                                <button type="submit" class="black">로그인</button>
+                                <button class="kakao">카카오계정 로그인</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            
+                <div class="sign-up-wrapper">
+                    <div class="sign-up">
                         <div class="title-box">
-                            <p id="name">로그인</p>
-                            <p id="name-description">기존 고객님일 경우 아래 로그인을 이용해주세요</p>
-                        </div>
-                        <div class="id-box">
-                            <p>아이디 또는 이메일</p>
-                            <input type="text">
-                        </div>
-                        <div class="pw-box">
-                            <p>비밀번호</p>
-                            <input type="text">
-                        </div>
-                        <div class="find-pw">
-                            <a href="">비밀번호 찾기</a>
+                            <p id="name">회원가입</p>
+                            <p id="name-description">
+                                회원가입을 하시면, 주문 조회와 개인정보 관리 및 
+                                위시리스트 확인 등 다양한 혜택을 누리실 수 있습니다.
+                            </p>
                         </div>
                         <div class="btns">
-                            <button type="submit" class="black">로그인</button>
-                            <button class="kakao">카카오계정 로그인</button>
+                            <button type="submit" class="black">신규가입</button>
                         </div>
-                    </form>
-                </div>
-            </div>
-          
-            <div class="sign-up-wrapper">
-                <div class="sign-up">
-                    <div class="title-box">
-                        <p id="name">회원가입</p>
-                        <p id="name-description">
-                            회원가입을 하시면, 주문 조회와 개인정보 관리 및 
-                            위시리스트 확인 등 다양한 혜택을 누리실 수 있습니다.
-                        </p>
-                    </div>
-                    <div class="btns">
-                        <button type="submit" class="black">신규가입</button>
                     </div>
                 </div>
-            </div>
-        </section>
-        <footer></footer>
-        </container>
+            </section>
+            <footer></footer>
+        </div>
     </body>
 </html>
