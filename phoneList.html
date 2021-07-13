@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @font-face {
+            font-family: 'NEXEN_TIRE_Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/NEXEN_TIRE_Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        *{margin: 0; padding: 0; border: 0;}
+        .container
+        {
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .title
+        {   
+            font-family: 'NEXEN_TIRE_Bold';
+            flex: 1.5;
+            background-color: white;
+            /* font-weight: bold; */
+            font-size: 70px;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        .menu
+        {
+            flex: 0.5;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .menu p
+        {
+            float: left;
+            margin-left: 15px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .menu #samsungBtn {
+            color: rgb(180, 178, 178);
+        }
+
+        .main
+        {
+            flex: 8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .samsung
+        {
+            width: 70%;
+            height: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: all 0.5s linear;
+        }
+
+        .samsung p
+        {
+            margin-top: 5px;
+        }
+    
+
+        .apple p
+        {
+            margin-top: 5px;
+        }
+
+        .apple
+        {
+            width: 70%;
+            height: 80%;
+            display: none;
+            flex-wrap: wrap;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: all 0.5s linear;
+        }
+
+        .samsung div
+        {
+            width: 200px;
+            height: 240px;
+            margin: 20px 20px;
+            border-radius: 8px;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+
+        img
+        {
+            width: 200px;
+            height: 240px;
+            border-radius: 8px;
+        }
+
+        .apple div
+        {
+            width: 200px;
+            height: 240px;
+            margin: 20px 20px;
+            border-radius: 8px;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <p>SellPhone</p>
+        </div>
+        <div class="menu">
+            <p id="samsungBtn">Samsung</p>
+            <p id="appleBtn">Apple</p>
+        </div>
+        <div class="main">
+            <div class="samsung" id="samsung">
+                <div>
+                    <a href="./exam.html">
+                        <img src="./samsung/1.webp" alt="">
+                    </a>
+                    <p>Galaxy S21 Ultra 5G</p>
+                </div>
+                <div>
+                    <img src="./samsung/2.webp" alt="">
+                    <p>Galaxy S21+ 5G</p>
+                </div>
+                <div>
+                    <img src="./samsung/3.webp" alt="">
+                    <p>Galaxy S21 5G</p>
+                </div>
+                <div>
+                    <img src="./samsung/4.webp" alt="">
+                    <p>Galaxy Z Fold2 5G</p>
+                </div>
+                <div>
+                    <img src="./samsung/5.webp" alt="">
+                    <p>Galaxy Z Flip 5G</p>
+                </div>
+                <div>
+                    <img src="./samsung/6.webp" alt="">
+                    <p>Galaxy A42 5G</p>
+                </div>
+                <div>
+                    <img src="./samsung/7.webp" alt="">
+                    <p>Galaxy A32</p>
+                </div>
+                <div>
+                    <img src="./samsung/8.webp" alt="">
+                    <p>Galaxy A12</p>
+                </div>
+            </div>
+            <div class="apple" id="apple">
+                <div>
+                    <a href="./helo.html">
+                        <img src="./apple/1.jpeg" alt="">
+                    </a>
+                    <p>iPhone 12 Pro</p>
+                </div>
+                <div>
+                    <img src="./apple/2.jpeg" alt="">
+                    <p>iPhone 12</p>
+                </div>
+                <div>
+                    <img src="./apple/3.jpeg" alt="">
+                    <p>iPhone SE</p>
+                </div>
+                <div>
+                    <img src="./apple/4.jpeg" alt="">
+                    <p>iPhone 11</p>
+                </div>
+                <div>
+                    <img src="./apple/5.png" alt="">
+                    <p>iPad Pro</p>
+                </div>
+                <div>
+                    <img src="./apple/6.png" alt="">
+                    <p>iPad Air</p>
+                </div>
+                <div>
+                    <img src="./apple/7.png" alt="">
+                    <p>iPad</p>
+                </div>
+                <div>
+                    <img src="./apple/8.png" alt="">
+                    <p>iPad mini</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('samsungBtn').addEventListener('click', function() {
+            document.getElementById('samsung').style.display = 'flex';
+            document.getElementById('apple').style.display = 'none';
+        });
+        document.getElementById('appleBtn').addEventListener('click', function() {
+            document.getElementById('samsung').style.display = 'none';
+            document.getElementById('apple').style.display = 'flex';
+        })
+    </script>
+</body>
+</html>
